@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sync_fifo_sim.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_sync_fifo" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="1500ns"></ZoomEndTime>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="240"></NameColumnWidth>
+      <ValueColumnWidth column_width="110"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="group_clk_rst" type="group">
+      <obj_property name="label">Clock &amp; Reset</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_sync_fifo/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sync_fifo/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group_write" type="group">
+      <obj_property name="label">Write Interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_sync_fifo/wr_en" type="logic">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sync_fifo/wr_data" type="array">
+         <obj_property name="ElementShortName">wr_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_data[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group_read" type="group">
+      <obj_property name="label">Read Interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_sync_fifo/rd_en" type="logic">
+         <obj_property name="ElementShortName">rd_en</obj_property>
+         <obj_property name="ObjectShortName">rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sync_fifo/rd_data" type="array">
+         <obj_property name="ElementShortName">rd_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_data[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group_flags" type="group">
+      <obj_property name="label">Status Flags</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_sync_fifo/full" type="logic">
+         <obj_property name="ElementShortName">full</obj_property>
+         <obj_property name="ObjectShortName">full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sync_fifo/empty" type="logic">
+         <obj_property name="ElementShortName">empty</obj_property>
+         <obj_property name="ObjectShortName">empty</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group_internal" type="group">
+      <obj_property name="label">Internal Control &amp; Pointers</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_sync_fifo/dut/u_fifo_ctrl/wr_valid" type="logic">
+         <obj_property name="ElementShortName">wr_valid</obj_property>
+         <obj_property name="ObjectShortName">wr_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sync_fifo/dut/u_fifo_ctrl/rd_valid" type="logic">
+         <obj_property name="ElementShortName">rd_valid</obj_property>
+         <obj_property name="ObjectShortName">rd_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sync_fifo/dut/wr_ptr" type="array">
+         <obj_property name="ElementShortName">wr_ptr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_ptr[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sync_fifo/dut/rd_ptr" type="array">
+         <obj_property name="ElementShortName">rd_ptr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_ptr[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sync_fifo/dut/fifo_count" type="array">
+         <obj_property name="ElementShortName">fifo_count[4:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_count[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
+
